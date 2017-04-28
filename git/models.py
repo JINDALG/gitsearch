@@ -6,7 +6,7 @@ class User(TimeStampedModel):
     username = models.CharField(max_length=50, unique=True)
     email = models.EmailField()
     name = models.CharField(max_length=50)
-    image = models.ImageField()
+    image = models.URLField()
     followers_url = models.URLField()
     organizations_url = models.URLField()
     repos_url = models.URLField()
@@ -22,7 +22,7 @@ class User(TimeStampedModel):
         return self.username
 
     def get_image(self):
-        return "<img src='{0}', height='100px', width='100px'><img>".format(self.image)
+        return "<img src='{0}', height='50', width='50px'><img>".format(self.image)
 
     get_image.allow_tags = True
     get_image.short_description = 'Photo'
