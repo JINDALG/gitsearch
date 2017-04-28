@@ -1,6 +1,8 @@
 Django==1.8
+Pillow==4.1.0
 argparse==1.2.1
 django-extensions==1.6.7
 djangorestframework==3.3.3
+olefile==0.44
 six==1.10.0
 wsgiref==0.1.2
