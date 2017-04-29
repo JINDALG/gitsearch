@@ -135,4 +135,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 REQUEST_IGNORE_PATHS = (
     r'^admin/',
+    r'^static/',
 )
